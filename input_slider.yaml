@@ -1,0 +1,12 @@
+on_holiday_hour:
+  name: On holiday hour
+  initial: 0
+  min: 0
+  max: 23
+  step: 1
+on_holiday_minute:
+  name: On holiday minute
+  initial: 0
+  min: 0
+  max: 59
+  step: 1

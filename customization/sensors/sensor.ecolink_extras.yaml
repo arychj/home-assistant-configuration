@@ -1,0 +1,16 @@
+sensor.ecolink_doorwindow_sensor_alarm_level_5_1:
+  hidden: true
+sensor.ecolink_doorwindow_sensor_alarm_type_5_0:
+  hidden: true
+sensor.ecolink_doorwindow_sensor_burglar_5_10:
+  hidden: true
+sensor.ecolink_doorwindow_sensor_sourcenodeid_5_2:
+  hidden: true
+sensor.ecolink_pir_motion_sensor_alarm_level_4_1:
+  hidden: true
+sensor.ecolink_pir_motion_sensor_alarm_type_4_0:
+  hidden: true
+sensor.ecolink_pir_motion_sensor_burglar_4_10:
+  hidden: true
+sensor.ecolink_pir_motion_sensor_sourcenodeid_4_2:
+  hidden: true

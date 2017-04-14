@@ -1,0 +1,16 @@
+action:
+  service: light.turn_on
+  data_template:
+    entity_id: "group.lights_{{ Room | replace(' ', '_') }}"
+    color_name: "{{ Color }}"
+    brightness: 255
+#        {% if {{Group}} == 'living_room' %}
+#          group.living_room_lights
+#        {% elif {{Group}} == 'entryway' %}
+#          group.entryway
+#        {% elif {{Group}} == 'bedroom' %}
+#          group.beroom_lights
+#        {% endif %}
+speech:
+  type: plaintext
+  text: !include ../confirmations.yaml

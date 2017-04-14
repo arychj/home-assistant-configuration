@@ -1,0 +1,15 @@
+>
+  {{ [
+    "Good night!",
+    "Night!",
+    "Night night!",
+    "Nighty night!",
+    "Time to ride the rainbow to dreamland!",
+    "Lights out!",
+    "Sweet dreams.",
+    "May the force be with you.",
+    "Good night, good night! parting is such sweet sorrow, that I shall say good night till it be morrow.",
+    "Sweet dreams",
+    "Sleep well",
+    "Bon nuit"
+  ] | random }} 

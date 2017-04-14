@@ -1,0 +1,12 @@
+entities:
+  - sensor.weather_condition
+  - sensor.weather_current
+  - sensor.weather_temperature
+  - sensor.weather_temperature_max
+  - sensor.weather_temperature_min
+  - sensor.pws_alerts
+  - sensor.pws_feelslike_f
+  - sensor.pws_temp_f
+  - sensor.pws_precip_1hr_in
+  - sensor.pws_precip_today_in
+  - sensor.pws_solarradiation

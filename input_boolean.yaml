@@ -1,0 +1,24 @@
+restart_hass:
+  name: Restart HASS
+  initial: off
+  icon: mdi:autorenew
+test_trigger:
+  name: Test Trigger
+  initial: off
+  icon: mdi:multiplication
+arriving_sierra:
+  name: Arriving - Sierra
+  initial: off
+  icon: mdi:airplane-landing
+arriving_erik:
+  name: Arriving - Erik
+  initial: off
+  icon: mdi:airplane-landing
+notify_home_available:
+  name: Notify home available
+  initial: off
+  icon: mdi:bullhorn
+alarm_morning_sounded:
+  name: Morning alam has sounded
+  initial: off
+  icon: mdi:alarm

@@ -1,0 +1,15 @@
+alias: "Front door opened notification"
+sequence:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: sensor.presence_erik
+      state: 'not_home'
+    - condition: state
+      entity_id: sensor.presence_sierra
+      state: 'not_home'
+  - service: notify.sms
+    data:
+      message: "The front door just opened"
+      target:
+        - +6127703061

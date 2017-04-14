@@ -1,0 +1,73 @@
+homeassistant:
+  name: Home
+  latitude: !secret gps_home_latitude
+  longitude: !secret gps_home_longitude
+  elevation: 597
+  unit_system: imperial
+  time_zone: America/Chicago
+  customize: !include_dir_merge_named customization
+
+zone:
+  name: Home
+  latitude: !secret gps_home_latitude
+  longitude: !secret gps_home_longitude
+  radius: 500
+
+zone 1:
+  name: Work
+  latitude: !secret gps_work_latitude
+  longitude: !secret gps_work_longitude
+  radius: 750
+  icon: mdi:account-worker
+
+# Enables the frontend
+frontend:
+
+http:
+  api_password: !secret homeassistant_api_password
+#  ssl_certificate: /data/homeassistant/certs/server.crt
+#  ssl_key: /data/homeassistant/certs/server.key
+#  trusted_networks: 192.168.1.0/24
+  login_attempts_threshold: 5
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+#discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+alexa: !include alexa/intents.yaml
+automation: !include_dir_merge_list automation
+binary_sensor: !include binary_sensor.yaml
+camera: !include_dir_merge_list cameras
+device_tracker: !include device_tracker.yaml
+emulated_hue: !include emulated_hue.yaml
+google: !include google.yaml
+group: !include_dir_named groups
+ifttt: !include ifttt.yaml
+input_boolean: !include input_boolean.yaml
+input_slider: !include input_slider.yaml
+light: !include light.yaml
+media_player: !include media_player.yaml
+mqtt: !include mqtt.yaml
+notify: !include notify.yaml
+remote: !include remote.yaml
+script: !include_dir_named scripts
+sensor: !include_dir_merge_list sensors
+shell_command: !include shell_command.yaml
+switch: !include switch.yaml
+tts: !include tts.yaml
+twilio: !include twilio.yaml
+zwave: !include zwave.yaml

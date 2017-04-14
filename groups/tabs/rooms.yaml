@@ -1,0 +1,10 @@
+name: Rooms
+view: yes
+entities:
+  - group.room_bathroom_master
+  - group.room_bedroom_master
+  - group.room_entryway
+  - group.room_hall
+  - group.room_living_room
+  - group.room_office
+  - group.room_stair

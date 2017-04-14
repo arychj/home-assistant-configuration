@@ -1,0 +1,21 @@
+broker: 127.0.0.1
+port: 1883
+#certificate: /data/home-assistant/certs/ca.crt
+client_id: home-assistant
+keepalive: 60
+#username: home-assistant
+#password: GSZGv8G6tTwccaf5
+username: !secret mqtt_username
+password: !secret mqtt_password
+#certificate: /home/paulus/dev/addtrustexternalcaroot.crt
+#protocol: 3.1
+birth_message:
+  topic: 'hass/status'
+  payload: 'online'
+  qos: 1
+  retain: true
+will_message:
+  topic: 'hass/status'
+  payload: 'offline'
+  qos: 1
+  retain: true

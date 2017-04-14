@@ -1,0 +1,12 @@
+view: yes
+name: Lighting Groups
+entities:
+  - group.lights_arrival
+  - group.lights_bathroom_master
+  - group.lights_bedroom_master
+  - group.lights_entryway
+  - group.lights_hall
+  - group.lights_living_room
+  - group.lights_offic
+  - group.lights_stair
+  - group.all_lights

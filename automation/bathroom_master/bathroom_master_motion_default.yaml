@@ -1,0 +1,11 @@
+- alias: Turn on master bathroom lights when motion detected
+  trigger:
+    - platform: state
+      entity_id: sensor.motion_3061
+      to: 'movement'
+  action:
+#    - service: script.bathroom_master_motion_weekday_morning
+    - service: homeassistant.turn_on
+      entity_id: script.bathroom_master_motion_nightlight
+    - service: homeassistant.turn_on
+      entity_id: script.bathroom_master_motion_default

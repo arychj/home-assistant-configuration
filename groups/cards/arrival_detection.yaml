@@ -1,0 +1,5 @@
+name: Arrival detection
+entities:
+  - script.arriving
+  - input_boolean.arriving_sierra
+  - input_boolean.arriving_erik

@@ -1,0 +1,12 @@
+alias: "Leaving"
+action:
+  - service: light.turn_on
+    data_template:
+      entity_id: group.lights_entryway
+  - delay: "00:05:00"
+  - service: light.turn_off
+    data_template:
+      entity_id: group.lights_entryway
+speech:
+  type: plaintext
+  text: !include ../confirmations.yaml

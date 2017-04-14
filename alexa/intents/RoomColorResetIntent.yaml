@@ -1,0 +1,10 @@
+action:
+  service: light.turn_on
+  data_template:
+    entity_id: "group.lights_{{ Room | replace(' ', '_') }}"
+    brightness: 254
+    color_temp: 370
+    rgb_color: [255,199,116]
+speech:
+  type: plaintext
+  text: !include ../confirmations.yaml

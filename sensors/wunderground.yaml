@@ -1,0 +1,24 @@
+#- platform: wunderground
+#  hidden: true
+#  api_key: !secret wunderground_api_key
+#  monitored_conditions:
+#    - alerts
+#    - feelslike_f
+#    - feelslike_string
+#    - heat_index_f
+#    - heat_index_string
+#    - precip_1hr_in
+#    - precip_today_in
+#    - precip_today_string
+#    - station_id
+#    - solarradiation
+#    - temperature_string
+#    - temp_f
+#    - UV
+#    - visibility_mi
+#    - weather #!!
+#    - wind_degrees
+#    - wind_dir
+#    - wind_gust_mph
+#    - wind_mph
+#    - wind_string

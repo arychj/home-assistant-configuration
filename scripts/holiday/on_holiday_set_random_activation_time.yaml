@@ -1,0 +1,11 @@
+alias: On holiday set random activation time
+sequence:
+  - service: input_slider.select_value
+    data_template:
+      entity_id: input_slider.on_holiday_hour
+      # The endpoint is omitted, see: http://jinja.pocoo.org/docs/dev/templates/#range
+      value: '{{ (range(17, 20)|random) }}'
+  - service: input_slider.select_value
+    data_template:
+      entity_id: input_slider.on_holiday_minute
+      value: '{{ (range(00, 60)|random) }}'

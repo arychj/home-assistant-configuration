@@ -1,0 +1,3 @@
+sensor.magnetic_3060:
+  friendly_name: Front door
+  icon: mdi:glassdoor

@@ -1,0 +1,16 @@
+alias: "Master bathroom motion default"
+sequence:
+  - condition: and
+    conditions:
+      - condition: time
+        after: "09:00:00"
+      - condition: time
+        before: "22:00:00"
+  - service: script.turn_off
+    data:
+      entity_id: script.bathroom_master_idle
+  - service: light.turn_on
+    data:
+      entity_id: group.lights_bathroom_master
+      brightness: 254
+  - service: script.bathroom_master_idle

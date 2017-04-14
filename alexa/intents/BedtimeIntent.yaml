@@ -1,0 +1,8 @@
+action:
+  - service: script.bedtime
+  - service: light.turn_on
+    data:
+      entity_id: group.lights_bedroom_master
+speech:
+  type: plaintext
+  text: !include ../confirmations.yaml

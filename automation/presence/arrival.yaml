@@ -1,0 +1,8 @@
+- alias: Arriving
+  trigger:
+    platform: state
+    entity_id: sensor.magnetic_3060
+    from: 'closed'
+    to: 'open'
+  action:
+    service: script.arriving

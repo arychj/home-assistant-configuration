@@ -1,0 +1,27 @@
+alias: "Arriving home greeting"
+sequence:
+  - condition: or
+    conditions:
+    - condition: state
+      entity_id: input_boolean.arriving_sierra
+      state: 'on'
+    - condition: state
+      entity_id: input_boolean.arriving_erik
+      state: 'on'
+  - service: script.arriving_lights
+  - service: notify.alert
+    data_template:
+      message: >
+        {%- if is_state('input_boolean.arriving_sierra', 'on') and is_state('input_boolean.arriving_erik', 'on') -%}
+          Welcome home
+        {%- elif is_state('input_boolean.arriving_sierra', 'on') -%}
+          Welcome home Sierra
+        {%- elif is_state('input_boolean.arriving_erik', 'on') -%}
+          Welcome home Erik
+        {%- endif -%}
+  - service: input_boolean.turn_off
+    data:
+      entity_id: input_boolean.arriving_erik
+  - service: input_boolean.turn_off
+    data:
+      entity_id: input_boolean.arriving_sierra

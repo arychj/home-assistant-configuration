@@ -1,0 +1,8 @@
+action:
+  service: script.light_delayed_deactivation
+  data_template:
+    entity_id: "group.lights_{{ LightingGroup[:-7] | replace(' ', '_') }}"
+    delay: "{{ Delay }}"
+speech:
+  type: plaintext
+  text: !include ../confirmations.yaml

@@ -1,0 +1,3 @@
+sensor.motion_3061:
+  friendly_name: Bathroom
+  icon: mdi:eye

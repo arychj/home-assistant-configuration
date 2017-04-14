@@ -1,0 +1,6 @@
+- platform: iss
+  show_on_map: true
+  latitude: !secret gps_home_latitude
+  longitude: !secret gps_home_longitude
+- platform: workday
+  country: US

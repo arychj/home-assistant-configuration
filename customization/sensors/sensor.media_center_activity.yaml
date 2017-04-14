@@ -1,0 +1,3 @@
+sensor.media_center_activity:
+  friendly_name: Current activity
+  icon: mdi:airplay

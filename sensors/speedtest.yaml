@@ -1,0 +1,8 @@
+- platform: speedtest
+  name: Internet metrics
+  server_id: 1764
+  hour: 3
+  monitored_conditions:
+    - ping
+    - download
+    - upload
