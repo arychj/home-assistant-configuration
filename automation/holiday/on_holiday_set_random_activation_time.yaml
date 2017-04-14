@@ -1,0 +1,6 @@
+- alias: On holiday set random activation time
+  trigger:
+    - platform: time
+      after: "16:59:00"
+  action:
+    - service: script.on_holiday_set_random_activation_time

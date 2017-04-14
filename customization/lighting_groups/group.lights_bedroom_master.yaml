@@ -1,0 +1,3 @@
+group.lights_bedroom_master:
+  emulated_hue: true
+  friendly_name: Bedroom lights

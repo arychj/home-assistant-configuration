@@ -1,0 +1,9 @@
+name: Main
+view: yes
+entities:
+  - group.sensors_location
+  - group.sensors_internet_metrics
+  - group.sensors_traffic
+  - group.room_living_room
+  - group.room_bedroom_master
+  - group.room_bathroom_master

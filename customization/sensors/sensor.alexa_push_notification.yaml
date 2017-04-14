@@ -1,0 +1,3 @@
+sensor.alexa_push_notification:
+  icon: mdi:message-text-outline
+  hidden: true

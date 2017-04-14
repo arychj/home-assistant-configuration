@@ -1,0 +1,17 @@
+alias: "Arriving lights"
+sequence:
+  - condition: and
+    conditions: 
+      condition: sun
+      after: sunset
+      after_offset: "-00:30:00"
+  - service: script.light_on_default
+    data:
+      entity_id: group.lights_arrival
+  - service: script.light_on_default
+    data:
+      entity_id: group.lights_living_room
+  - delay: "00:05:00"
+  - service: light.turn_off
+    data:
+      entity_id: group.lights_arrival

@@ -1,0 +1,17 @@
+alias: "Good morning"
+sequence:
+  - service: notify.alert
+    data_template:
+      message: >
+        Good morning, the time is 
+        {%- if states('sensor.time')[0] == "0" %} oh {{ states('sensor.time')[1] }}
+        {%- else %} {{ states('sensor.time')[0:2] }}
+        {%- endif %}
+        {%- if states('sensor.time')[3:5] == "00" %} hundred 
+        {%- else %} {{ states('sensor.time')[3:5] }} 
+        {%- endif %} hours.
+        It's currently {{states.sensor.dark_sky_summary.state}}
+        and {{states.sensor.dark_sky_temperature.state|round}} degrees.
+        Today will be {{states.sensor.dark_sky_hourly_summary.state|replace(".", "")}},
+        with a high of {{states.sensor.dark_sky_daily_high_temperature.state|round}} degrees
+        and a low of {{states.sensor.dark_sky_daily_low_temperature.state|round}}.

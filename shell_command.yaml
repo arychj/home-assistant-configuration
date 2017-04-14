@@ -1,0 +1,3 @@
+plex_play_show: "/data/plex/play_episode.py \"{{ play_type }}\" \"{{ show }}\""
+restart_hass: "/data/scripts/hass_control.sh restart"
+suspend_remote_host: "/data/scripts/suspend_remote_host.sh \"{{ host }}\""

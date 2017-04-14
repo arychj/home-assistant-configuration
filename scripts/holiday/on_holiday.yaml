@@ -1,0 +1,13 @@
+alias: "On holiday"
+sequence:
+  - service: light.turn_on
+    data:
+      entity_id: group.lights_living_room
+      brightness: 254
+      color_temp: 370
+      rgb_color: [255,199,116]
+      transition: 0
+  - delay: "{{ (range(3, 5) | random) }}:{{ (range(0, 60) | random) }}:00"
+  - service: light.turn_off
+    data:
+      entity_id: group.lights_living_room

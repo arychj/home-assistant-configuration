@@ -1,0 +1,6 @@
+entities:
+  - input_boolean.test_trigger
+  - input_boolean.restart_hass
+  - input_boolean.alarm_morning_sounded
+  - input_boolean.notify_home_available
+#  - sensor.alexa_push_notification

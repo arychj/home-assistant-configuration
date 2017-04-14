@@ -1,0 +1,5 @@
+name: Upstairs lights
+entities:
+  - group.lights_living_room
+  - group.lights_entryway
+  - group.lights_stair

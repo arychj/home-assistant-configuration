@@ -1,0 +1,17 @@
+action:
+  - service: remote.turn_on
+    entity_id: remote.media_center
+    data:
+      activity: "Plex"
+  - delay: "00:00:01"
+  - service: shell_command.plex_play_show
+    data_template:
+      play_type: "{{ PlayType }}"
+      show: "{{ Show }}"
+speech:
+  type: plaintext
+  text: !include ../confirmations.yaml
+card:
+  type: simple
+  title: Play episode
+  content: "Playing the {{ PlayType }} episode of {{ Show }}"

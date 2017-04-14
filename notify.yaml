@@ -1,0 +1,35 @@
+- name: instapush
+  platform: instapush
+  api_key: !secret instapush_key
+  app_secret: !secret instapush_secret
+  event: notification
+  tracker: notification
+- name: slack
+  platform: slack
+  api_key: !secret slack_api_key
+  default_channel: '#general'
+- name: sms
+  platform: twilio_sms
+  from_number: !secret twilio_from_number
+- name: phone
+  platform: twilio_call
+  from_number: !secret twilio_from_number
+- name: email
+  platform: smtp
+  server: !secret email_server
+  port: 587
+  starttls: True
+  username: !secret email_username
+  password: !secret email_password
+  sender: !secret email_sender
+  recipient: !secret email_recipient
+- name: alert
+  platform: command_line
+  command: "/data/alexa/notify.sh"
+- name: matrix
+  platform: matrix
+  homeserver: !secret matrix_homeserver
+  username: !secret matrix_username
+  password: !secret matrix_password
+  default_room: !secret matrix_default_room
+  verify_ssl: false

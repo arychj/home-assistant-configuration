@@ -1,0 +1,3 @@
+entities:
+  - sensor.time_home
+  - sensor.time_to_work

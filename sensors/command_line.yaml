@@ -1,0 +1,4 @@
+- platform: command_line
+  name: "Alexa push notification"
+  command: "cat /data/alexa/notification.txt"
+  scan_interval: 1

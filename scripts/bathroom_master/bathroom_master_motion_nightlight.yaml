@@ -1,0 +1,21 @@
+alias: "Master bathroom nightlight"
+sequence:
+  - condition: and
+    conditions:
+      - condition: state
+        entity_id: group.room_bathroom_master
+        state: "off"
+      - condition: time
+        after: "22:00:00"
+  - service: script.turn_off
+    data:
+      entity_id: script.bathroom_master_idle
+  - service: light.turn_on
+    data:
+      entity_id: group.lights_bathroom_master
+      brightness: 25
+  - service: script.turn_on
+    data:
+      entity_id: script.bathroom_master_idle
+      variables:
+        idle_time: "00:00:15"

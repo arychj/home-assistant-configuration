@@ -1,0 +1,9 @@
+- platform: owntracks
+  max_gps_accuracy: 200
+  track_new_devices: no
+- platform: unifi
+  host: !secret unifi_host
+  verify_ssl: false
+  username: !secret unifi_username
+  password: !secret unifi_password
+  track_new_devices: no

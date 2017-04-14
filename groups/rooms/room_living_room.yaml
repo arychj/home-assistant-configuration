@@ -1,0 +1,5 @@
+entities:
+  - sensor.media_center_activity
+  - remote.media_center
+  - light.light_3052
+  - light.light_3053

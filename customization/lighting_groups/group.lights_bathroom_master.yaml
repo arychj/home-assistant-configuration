@@ -1,0 +1,3 @@
+group.lights_bathroom_master:
+  emulated_hue: true
+  friendly_name: Bathroom lights

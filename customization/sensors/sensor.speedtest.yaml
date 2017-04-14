@@ -1,0 +1,9 @@
+sensor.speedtest_ping:
+  friendly_name: Ping
+  icon: mdi:access-point
+sensor.speedtest_upload:
+  friendly_name: Upload speed
+  icon: mdi:arrow-up
+sensor.speedtest_download:
+  friendly_name: Download speed
+  icon: mdi:arrow-down

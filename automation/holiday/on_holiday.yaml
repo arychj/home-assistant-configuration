@@ -1,0 +1,7 @@
+- alias: On holiday
+  initial_state: False
+  trigger:
+    - platform: template
+      value_template: "{{ is_state('sensor.time', states('input_slider.on_holiday_hour')|int ~ ':' ~ states('input_slider.on_holiday_minute')|int) }}"
+  action:
+    service: script.on_holiday

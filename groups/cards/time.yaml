@@ -1,0 +1,4 @@
+entities:
+  - sensor.date
+  - sensor.time
+  - binary_sensor.workday_sensor

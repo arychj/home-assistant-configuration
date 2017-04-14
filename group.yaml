@@ -1,0 +1,28 @@
+time:
+  entities:
+    - sensor.date
+    - sensor.time
+weather:
+  entities:
+    - sensor.weather_condition
+    - sensor.weather_current
+    - sensor.weather_temperature
+    - sensor.weather_temperature_max
+    - sensor.weather_temperature_min
+system:
+  entities:
+    - input_boolean.restart_hass
+living_room:
+  entities:
+bedroom:
+  entities:
+office:
+  entities:
+entryway:
+  entities:
+rooms:
+  view: yes
+  name: Rooms
+  entities:
+    - group.living_room
+    - group.bedroom

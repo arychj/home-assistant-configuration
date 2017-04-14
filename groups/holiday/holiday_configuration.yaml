@@ -1,0 +1,6 @@
+name: Holiday configuration
+entities:
+  - automation.on_holiday
+  - automation.on_holiday_random_activation_time
+  - input_slider.on_holiday_hour
+  - input_slider.on_holiday_minute

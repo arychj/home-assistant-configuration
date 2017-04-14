@@ -1,0 +1,4 @@
+entities:
+  - sensor.magnetic_3060
+  - light.light_3049
+  - light.light_3050

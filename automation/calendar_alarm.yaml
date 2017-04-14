@@ -1,0 +1,28 @@
+- alias: Calendar alarm
+  trigger:
+    - platform: state
+      entity_id: "calendar.calendar_erik"
+      from: "off"
+      to: "on"
+    - platform: template
+      value_template: "{% if states.calendar.calendar_erik.offset_reached == 'true' %}true{% endif %}"
+    - platform: state
+      entity_id: "calendar.calendar_sierra"
+      from: "off"
+      to: "on"
+    - platform: template
+      value_template: "{% if states.calendar.calendar_sierra.offset_reached == 'true' %}true{% endif %}"
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_boolean.alarm_morning_sounded
+        state: "off"
+      - condition: time
+        after: "00:00:00"
+        before: "08:00:00"
+  action:
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.alarm_morning_sounded
+    - service: script.good_morning

@@ -1,0 +1,8 @@
+action:
+  service: script.light_timed_activation
+  data_template:
+    entity_id: "group.lights_{{ LightingGroup[:-7] | replace(' ', '_') }}"
+    duration: "{{ Duration }}"
+speech:
+  type: plaintext
+  text: !include ../confirmations.yaml

@@ -1,0 +1,7 @@
+name: Sensors
+view: yes
+entities:
+  - group.sensors_door
+  - group.sensors_window
+  - group.sensors_motion
+  - group.sensors_location

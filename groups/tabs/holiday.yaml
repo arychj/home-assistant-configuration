@@ -1,0 +1,4 @@
+view: yes
+name: Holiday
+entities:
+  - group.holiday_configuration

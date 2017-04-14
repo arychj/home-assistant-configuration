@@ -1,0 +1,5 @@
+entities:
+  - device_tracker.arychj_mobile
+  - device_tracker.onyx
+  - device_tracker.scullati_mobile
+  - device_tracker.iphone

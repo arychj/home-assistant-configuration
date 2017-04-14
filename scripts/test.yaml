@@ -1,0 +1,21 @@
+alias: "Test"
+sequence:
+  - service: light.turn_on
+    data:
+      entity_id: light.light_3052
+      brightness: 254
+      rgb_color: [40,3,83]
+  - delay: "00:00:03"
+  - service: light.turn_on
+    data:
+      entity_id: light.light_3052
+      color_temp: 370
+      rgb_color: [255,199,116]
+      brightness: 1
+      transition: 0
+  - delay: "00:00:01"
+  - service: light.turn_on
+    data:
+      entity_id: light.light_3052
+      brightness: 0
+      transition: 0

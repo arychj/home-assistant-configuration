@@ -1,0 +1,7 @@
+- platform: lyft
+  client_id: !secret lyft_client_id
+  client_secret: !secret lyft_client_secret
+  start_latitude: !secret gps_home_latitude
+  start_longitude: !secret gps_home_longitude
+  product_ids:
+    - 'lyft'

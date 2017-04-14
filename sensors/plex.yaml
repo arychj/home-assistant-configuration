@@ -1,0 +1,5 @@
+- platform: plex
+  host: myriad
+  port: 53240
+  username: !secret plex_username
+  password: !secret plex_password

@@ -1,0 +1,8 @@
+alias: "Reset light color"
+sequence:
+  - service: light.turn_on
+    data:
+      entity_id: "{{ entity }}"
+      brightness: 254
+      color_temp: 370
+      rgb_color: [255,199,116]

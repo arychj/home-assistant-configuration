@@ -1,0 +1,9 @@
+speech:
+  type: plaintext
+  text: >
+    {%- if is_state('device_tracker.arychj_mobile', 'home') and is_state('device_tracker.scullati_mobile', 'home') -%}
+      You're both home, you wanker
+    {%- else -%}
+      Sierra is at {{ states("device_tracker.arychj_mobile") }}
+      and Erik is at {{ states("device_tracker.arychj_mobile") }}
+    {% endif %}

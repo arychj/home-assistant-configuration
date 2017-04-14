@@ -1,0 +1,7 @@
+>
+  {{ [
+    "Well fuck you too",
+    "I'm sorry master",
+    "I'm sorry master, I'm just a machine",
+    "I'm sorry, I have no brain"
+  ] | random }} 
