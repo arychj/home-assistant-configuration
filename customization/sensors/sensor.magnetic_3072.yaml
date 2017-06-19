@@ -1,0 +1,3 @@
+sensor.magnetic_3072:
+  friendly_name: Cabinet
+  icon: mdi:glassdoor

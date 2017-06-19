@@ -1,0 +1,10 @@
+- alias: Turn on loft lights when motion detected
+  trigger:
+    - platform: state
+      entity_id: sensor.motion_3074
+      from: 'idle'
+      to: 'movement'
+  action:
+    - service: script.light_on_default
+      data:
+        entity_id: group.lights_loft

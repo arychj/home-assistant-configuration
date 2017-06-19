@@ -14,3 +14,25 @@ sensor.ecolink_pir_motion_sensor_burglar_4_10:
   hidden: true
 sensor.ecolink_pir_motion_sensor_sourcenodeid_4_2:
   hidden: true
+sensor.ecolink_unknown_type0004_id0002_access_control_6_9:
+  hidden: true
+sensor.ecolink_unknown_type0004_id0002_burglar_6_10:
+  hidden: true
+sensor.ecolink_unknown_type0004_id0002_power_management_6_11:
+  hidden: true
+sensor.ecolink_unknown_type0004_id0002_sourcenodeid_6_2:
+  hidden: true
+sensor.ecolink_unknown_type0004_id0002_alarm_level_6_1:
+  hidden: true
+sensor.ecolink_unknown_type0004_id0002_alarm_type_6_0:
+  hidden: true
+sensor.ecolink_motion_detector_alarm_level_9_1:
+  hidden: true
+sensor.ecolink_motion_detector_alarm_type_9_0:
+  hidden: true
+sensor.ecolink_motion_detector_burglar_9_10:
+  hidden: true
+sensor.ecolink_motion_detector_sourcenodeid_9_2:
+  hidden: true
+sensor.ecolink_motion_detector_power_management_9_11:
+  hidden: true

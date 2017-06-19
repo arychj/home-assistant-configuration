@@ -22,3 +22,7 @@ alarm_morning_sounded:
   name: Morning alam has sounded
   initial: off
   icon: mdi:alarm
+announcement_in_progress:
+  name: Announcement in progress
+  initial: off
+  icon: mdi:alarm

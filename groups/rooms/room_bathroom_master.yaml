@@ -1,5 +1,5 @@
 entities:
-  - sensor.motion_3061
+  - sensor.motion_3073
   - light.light_3056
   - light.light_3057
   - light.light_3058

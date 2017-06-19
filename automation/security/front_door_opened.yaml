@@ -1,0 +1,8 @@
+- alias: Front door opened
+  trigger:
+    platform: state
+    entity_id: sensor.magnetic_3060
+    from: 'closed'
+    to: 'open'
+  action:
+    service: script.front_door_opened

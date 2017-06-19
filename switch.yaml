@@ -18,6 +18,26 @@
       turn_off:
         service: switch.turn_off
         entity_id: switch.leviton_unknown_type1805_id0334_switch_3_0
+- platform: template
+  switches:
+    outlet_3043:
+      value_template: "{{ is_state('switch.leviton_unknown_type1805_id0334_switch_8_0', 'on') | lower }}"
+      turn_on:
+        service: switch.turn_on
+        entity_id: switch.leviton_unknown_type1805_id0334_switch_8_0
+      turn_off:
+        service: switch.turn_off
+        entity_id: switch.leviton_unknown_type1805_id0334_switch_8_0
+- platform: template
+  switches:
+    outlet_3044:
+      value_template: "{{ is_state('switch.leviton_unknown_type1805_id0334_switch_7_0', 'on') | lower }}"
+      turn_on:
+        service: switch.turn_on
+        entity_id: switch.leviton_unknown_type1805_id0334_switch_7_0
+      turn_off:
+        service: switch.turn_off
+        entity_id: switch.leviton_unknown_type1805_id0334_switch_7_0
 - platform: wake_on_lan
   name: !secret steambox_hostname
   host: !secret steambox_hostname

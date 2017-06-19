@@ -1,11 +1,11 @@
 - alias: Trash day reminder
   trigger:
     platform: time
-    after: "21:30:00"
+    at: "21:30:00"
   condition:
   - condition: time
     weekday: [wed, sun]
   action:
-    service: notify.alert
+    service: script.announce
     data:
       message: "Tomorrow is trash day. Have you taken out the trash yet?"
