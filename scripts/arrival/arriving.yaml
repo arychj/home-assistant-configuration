@@ -9,7 +9,7 @@ sequence:
       entity_id: input_boolean.arriving_erik
       state: 'on'
   - service: script.arriving_lights
-  - service: notify.alert
+  - service: script.announce
     data_template:
       message: >
         {%- if is_state('input_boolean.arriving_sierra', 'on') and is_state('input_boolean.arriving_erik', 'on') -%}

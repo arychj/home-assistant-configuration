@@ -1,16 +1,24 @@
 alias: "House announcement"
 sequence:
+  - service: input_boolean.turn_on
+    data:
+      entity_id: input_boolean.announcement_in_progress
   - service: media_player.sonos_snapshot
     entity_id: media_player.mc_speakers
   - service: media_player.volume_set
     entity_id: media_player.mc_speakers
     data:
       volume_level: 0.4
-  - service: tts.google_say
+  - service: tts.amazon_polly_say
     entity_id: media_player.mc_speakers
     data_template:
-      message: "{{ message }}"
-  - delay: "{{ reset_delay }}"
-  - service: media_player.sonos_restore
-    entity_id: media_player.mc_speakers
+      message: >
+        {%- if message|truncate(6, true) == '<speak' %}
+          "{{ message }}"
+        {%- else %}
+          "<speak>{{ message }}</speak>"
+        {%- endif %}
+#  - delay: "00:00:05"
+#  - service: media_player.sonos_restore
+#    entity_id: media_player.mc_speakers
 

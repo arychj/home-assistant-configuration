@@ -12,4 +12,4 @@ sequence:
     data:
       message: "The front door just opened"
       target:
-        - +6127703061
+        - !secret mobile_number_erik

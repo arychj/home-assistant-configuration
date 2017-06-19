@@ -6,5 +6,5 @@ entities:
   - group.room_entryway
   - group.room_hall
   - group.room_living_room
-  - group.room_office
+  - group.room_loft
   - group.room_stair
