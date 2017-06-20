@@ -12,13 +12,10 @@ sequence:
   - service: tts.amazon_polly_say
     entity_id: media_player.mc_speakers
     data_template:
-      message: >
-        {%- if message|truncate(6, true) == '<speak' %}
-          "{{ message }}"
-        {%- else %}
-          "<speak>{{ message }}</speak>"
-        {%- endif %}
-#  - delay: "00:00:05"
-#  - service: media_player.sonos_restore
-#    entity_id: media_player.mc_speakers
-
+      message: "{{ message }}"
+#>
+#        {%- if message|truncate(6, true, '') == '<speak' -%}
+#          "{{ message }}"
+#        {%- else -%}
+#          "<speak>{{ message }}</speak>"
+#        {%- endif -%}
