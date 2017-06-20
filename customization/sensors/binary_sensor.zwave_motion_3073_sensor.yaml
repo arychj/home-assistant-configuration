@@ -1,0 +1,2 @@
+binary_sensor.zwave_motion_3073_sensor:
+  hidden: true

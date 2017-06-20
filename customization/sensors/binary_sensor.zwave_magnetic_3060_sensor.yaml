@@ -1,0 +1,2 @@
+binary_sensor.zwave_magnetic_3060_sensor:
+  hidden: true

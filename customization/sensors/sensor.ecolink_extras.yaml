@@ -1,38 +1,38 @@
-sensor.ecolink_doorwindow_sensor_alarm_level_5_1:
+sensor.zwave_magnetic_3060_alarm_level:
   hidden: true
-sensor.ecolink_doorwindow_sensor_alarm_type_5_0:
+sensor.zwave_magnetic_3060_alarm_type:
   hidden: true
-sensor.ecolink_doorwindow_sensor_burglar_5_10:
+sensor.zwave_magnetic_3060_burglar:
   hidden: true
-sensor.ecolink_doorwindow_sensor_sourcenodeid_5_2:
+sensor.zwave_magnetic_3060_sourcenodeid:
   hidden: true
-sensor.ecolink_pir_motion_sensor_alarm_level_4_1:
+sensor.zwave_motion_3074_alarm_level:
   hidden: true
-sensor.ecolink_pir_motion_sensor_alarm_type_4_0:
+sensor.zwave_motion_3074_alarm_type:
   hidden: true
-sensor.ecolink_pir_motion_sensor_burglar_4_10:
+sensor.zwave_motion_3074_burglar:
   hidden: true
-sensor.ecolink_pir_motion_sensor_sourcenodeid_4_2:
+sensor.zwave_motion_3074_sourcenodeid:
   hidden: true
-sensor.ecolink_unknown_type0004_id0002_access_control_6_9:
+sensor.zwave_magnetic_3072_alarm_level:
   hidden: true
-sensor.ecolink_unknown_type0004_id0002_burglar_6_10:
+sensor.zwave_magnetic_3072_alarm_type:
   hidden: true
-sensor.ecolink_unknown_type0004_id0002_power_management_6_11:
+sensor.zwave_magnetic_3072_power_management:
   hidden: true
-sensor.ecolink_unknown_type0004_id0002_sourcenodeid_6_2:
+sensor.zwave_magnetic_3072_sourcenodeid:
   hidden: true
-sensor.ecolink_unknown_type0004_id0002_alarm_level_6_1:
+sensor.zwave_magnetic_3072_access_control:
   hidden: true
-sensor.ecolink_unknown_type0004_id0002_alarm_type_6_0:
+sensor.zwave_magnetic_3072_burglar:
   hidden: true
-sensor.ecolink_motion_detector_alarm_level_9_1:
+sensor.zwave_motion_3073_alarm_level:
   hidden: true
-sensor.ecolink_motion_detector_alarm_type_9_0:
+sensor.zwave_motion_3073_alarm_type:
   hidden: true
-sensor.ecolink_motion_detector_burglar_9_10:
+sensor.zwave_motion_3073_burglar:
   hidden: true
-sensor.ecolink_motion_detector_sourcenodeid_9_2:
+sensor.zwave_motion_3073_sourcenodeid:
   hidden: true
-sensor.ecolink_motion_detector_power_management_9_11:
+sensor.zwave_motion_3073_power_management:
   hidden: true
