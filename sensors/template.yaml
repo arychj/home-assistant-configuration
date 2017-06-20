@@ -29,7 +29,7 @@
         {%- if is_state("binary_sensor.ecolink_pir_motion_sensor_sensor_4_0", "on") or
                is_state("binary_sensor.sensor_4_0", "on") or
                is_state("binary_sensor.ecolink_motion_sensor", "on") or
-               is_state("binary_sensor.zwave_motion_3074_sensor", "off")
+               is_state("binary_sensor.zwave_motion_3074_sensor", "on")
           -%}
           movement
         {%- else -%}
@@ -40,7 +40,7 @@
         {%- if is_state("binary_sensor.ecolink_motion_detector_sensor_9_0", "on") or
                is_state("binary_sensor.sensor_9_0", "on") or
                is_state("binary_sensor.ecolink_motion_detector", "on") or
-               is_state("binary_sensor.zwave_motion_3073_sensor", "off")
+               is_state("binary_sensor.zwave_motion_3073_sensor", "on")
          -%}
           movement
         {%- else -%}
