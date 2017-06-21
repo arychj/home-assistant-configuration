@@ -4,44 +4,28 @@
       value_template: '{{ states.remote.living_room.current_activity }}'
     magnetic_3060:
       value_template: >
-        {%- if is_state("binary_sensor.ecolink_doorwindow_sensor_sensor_5_0", "off") or 
-               is_state("binary_sensor.sensor_5_0", "off") or
-               is_state("binary_sensor.echolink_doorwindow_sensor", "off") or
-               is_state("binary_sensor.zwave_magnetic_3060_sensor", "off")
-         -%}
+        {%- if is_state("binary_sensor.zwave_magnetic_3060_sensor", "off") -%}
           closed
         {%- else -%}
           open
         {%- endif -%}
     magnetic_3072:
       value_template: >
-        {%- if is_state("binary_sensor.ecolink_unknown_type0004_id0002_sensor_6_0", "off") or
-               is_state("binary_sensor.sensor_6_0", "off") or
-               is_state("binary_sensor.ecolink_unknown_type0004_id0002", "off") or
-               is_state("binary_sensor.zwave_magnetic_3072_sensor", "off")
-         -%}
+        {%- if is_state("binary_sensor.ecolink_unknown_type0004_id0002_sensor_6_0", "off") -%}
           closed
         {%- else -%}
           open
         {%- endif -%}
     motion_3074:
       value_template: >
-        {%- if is_state("binary_sensor.ecolink_pir_motion_sensor_sensor_4_0", "on") or
-               is_state("binary_sensor.sensor_4_0", "on") or
-               is_state("binary_sensor.ecolink_motion_sensor", "on") or
-               is_state("binary_sensor.zwave_motion_3074_sensor", "on")
-          -%}
+        {%- if is_state("binary_sensor.ecolink_pir_motion_sensor_sensor_4_0", "on") -%}
           movement
         {%- else -%}
           idle
         {%- endif -%}
     motion_3073:
       value_template: >
-        {%- if is_state("binary_sensor.ecolink_motion_detector_sensor_9_0", "on") or
-               is_state("binary_sensor.sensor_9_0", "on") or
-               is_state("binary_sensor.ecolink_motion_detector", "on") or
-               is_state("binary_sensor.zwave_motion_3073_sensor", "on")
-         -%}
+        {%- if is_state("binary_sensor.ecolink_motion_detector_sensor_9_0", "on") -%}
           movement
         {%- else -%}
           idle

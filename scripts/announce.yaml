@@ -21,6 +21,7 @@ sequence:
   - service: tts.amazon_polly_say
     entity_id: media_player.mc_speakers
     data_template:
+<<<<<<< HEAD
       message: "{{ message }}"
 #>
 #        {%- if message|truncate(6, true, '') == '<speak' -%}
@@ -28,3 +29,15 @@ sequence:
 #        {%- else -%}
 #          "<speak>{{ message }}</speak>"
 #        {%- endif -%}
+=======
+      message: >
+        {%- if message|truncate(6, true) == '<speak' %}
+          "{{ message }}"
+        {%- else %}
+          "<speak>{{ message }}</speak>"
+        {%- endif %}
+#  - delay: "00:00:05"
+#  - service: media_player.sonos_restore
+#    entity_id: media_player.mc_speakers
+
+>>>>>>> 8970a46bfcc863964620d32e484c36b52a5c32af
