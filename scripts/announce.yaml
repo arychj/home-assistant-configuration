@@ -8,6 +8,15 @@ sequence:
   - service: media_player.volume_set
     entity_id: media_player.mc_speakers
     data:
+      volume_level: 0.25
+  - service: media_player.play_media
+    entity_id: media_player.mc_speakers
+    data:
+      media_content_type: audio/mp3
+      media_content_id: http://jarvis/content/audio/chimes/notification.mp3
+  - service: media_player.volume_set
+    entity_id: media_player.mc_speakers
+    data:
       volume_level: 0.4
   - service: tts.amazon_polly_say
     entity_id: media_player.mc_speakers

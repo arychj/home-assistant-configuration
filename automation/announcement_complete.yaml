@@ -4,9 +4,13 @@
       entity_id: media_player.mc_speakers
       from: 'playing'
   condition:
-    condition: state
-    entity_id: input_boolean.announcement_in_progress
-    state: 'on'
+    condition: and
+    conditions:
+      - condition: template
+        value_template: '{{ states.media_player.mc_speakers.attributes.media_title != "notification.mp3" }}'
+      - condition: state
+        entity_id: input_boolean.announcement_in_progress
+        state: 'on'
   action:
     - delay: '00:00:01'
     - service: media_player.sonos_restore
