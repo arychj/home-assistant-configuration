@@ -1,8 +1,5 @@
 alias: "House announcement"
 sequence:
-  - service: input_boolean.turn_on
-    data:
-      entity_id: input_boolean.announcement_in_progress
   - service: media_player.sonos_snapshot
     entity_id: media_player.mc_speakers
   - service: media_player.volume_set
@@ -14,10 +11,15 @@ sequence:
     data:
       media_content_type: audio/mp3
       media_content_id: http://jarvis/content/audio/chimes/notification.mp3
+  - delay:
+      seconds: 0.5
   - service: media_player.volume_set
     entity_id: media_player.mc_speakers
     data:
       volume_level: 0.4
+  - service: input_boolean.turn_on
+    data:
+      entity_id: input_boolean.announcement_in_progress
   - service: tts.amazon_polly_say
     entity_id: media_player.mc_speakers
     data_template:
