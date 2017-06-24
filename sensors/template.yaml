@@ -11,21 +11,21 @@
         {%- endif -%}
     magnetic_3072:
       value_template: >
-        {%- if is_state("binary_sensor.ecolink_unknown_type0004_id0002_sensor_6_0", "off") -%}
+        {%- if is_state("binary_sensor.zwave_magnetic_3072_sensor", "off") -%}
           closed
         {%- else -%}
           open
         {%- endif -%}
     motion_3074:
       value_template: >
-        {%- if is_state("binary_sensor.ecolink_pir_motion_sensor_sensor_4_0", "on") -%}
+        {%- if is_state("binary_sensor.zwave_motion_3074_sensor", "on") -%}
           movement
         {%- else -%}
           idle
         {%- endif -%}
     motion_3073:
       value_template: >
-        {%- if is_state("binary_sensor.ecolink_motion_detector_sensor_9_0", "on") -%}
+        {%- if is_state("binary_sensor.zwave_motion_3073_sensor", "on") -%}
           movement
         {%- else -%}
           idle
