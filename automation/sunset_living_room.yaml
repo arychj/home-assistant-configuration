@@ -1,0 +1,16 @@
+- alias: Turn on living room lights an hour before sunset
+  trigger:
+    - platform: sun
+      event: sunset
+      offset: "-01:00:00"
+  condition:
+    condition: state
+    entity_id: sensor.presence_anyone
+    state: "home"
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: group.lights_living_room
+        transition: 60
+        brightness: 254
+        rgb_color: [255,199,116]

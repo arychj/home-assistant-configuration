@@ -1,2 +1,19 @@
-platform: hue
-host: 192.168.0.25
+- platform: hue
+  host: 192.168.0.25
+  scan_interval: 10
+- platform: template
+  lights:
+    template_lights_test:
+      friendly_name: "Template Lights Test"
+      entity_id: group.lights_living_room
+      turn_on:
+        service: light.turn_on
+        data:
+          entity_id: group.lights_living_room
+          brightness: 254
+#          color_temp: 370
+          rgb_color: [255,199,116]
+      turn_off:
+        service: light.turn_off
+        data:
+          entity_id: group.lights_living_room

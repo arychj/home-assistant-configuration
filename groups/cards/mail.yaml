@@ -1,0 +1,6 @@
+entities:
+  - camera.usps_mail
+  - sensor.usps_mail
+  - sensor.usps_packages
+  - sensor.ups
+  - sensor.fedex

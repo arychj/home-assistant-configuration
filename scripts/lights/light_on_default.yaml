@@ -4,5 +4,5 @@ sequence:
     data_template:
       entity_id: "{{ entity_id }}"
       brightness: 254
-      color_temp: 370
+#      color_temp: 370
       rgb_color: [255,199,116]

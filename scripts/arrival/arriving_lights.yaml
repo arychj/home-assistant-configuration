@@ -4,7 +4,7 @@ sequence:
     conditions: 
       condition: sun
       after: sunset
-      after_offset: "-00:30:00"
+      after_offset: "-01:00:00"
   - service: script.light_on_default
     data:
       entity_id: group.lights_arrival

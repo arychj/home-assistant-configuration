@@ -1,0 +1,4 @@
+view: yes
+name: Traffic Cameras
+entities:
+  - group.traffic_cameras

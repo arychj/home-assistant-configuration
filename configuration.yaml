@@ -71,4 +71,5 @@ shell_command: !include shell_command.yaml
 switch: !include switch.yaml
 tts: !include tts.yaml
 twilio: !include twilio.yaml
+usps: !include usps.yaml
 zwave: !include zwave.yaml
