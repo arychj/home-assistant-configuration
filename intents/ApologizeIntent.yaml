@@ -1,0 +1,2 @@
+speech:
+  text: !include ../misc/apologies.yaml

@@ -9,9 +9,5 @@ action:
       play_type: "{{ PlayType }}"
       show: "{{ Show }}"
 speech:
-  type: plaintext
-  text: !include ../confirmations.yaml
-card:
-  type: simple
-  title: Play episode
-  content: "Playing the {{ PlayType }} episode of {{ Show }}"
+  text: !include ../misc/confirmations.yaml
+async_action: true

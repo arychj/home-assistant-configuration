@@ -12,7 +12,4 @@ speech:
         I am sorry, I do not know where {{ User }} is.
       {%- endif -%}
     {%- endfor -%}
-card:
-  type: simple
-  title: Sample title
-  content: Some more content
+async_action: true

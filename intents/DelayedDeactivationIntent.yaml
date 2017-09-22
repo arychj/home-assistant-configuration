@@ -4,5 +4,5 @@ action:
     entity_id: "group.lights_{{ LightingGroup[:-7] | replace(' ', '_') }}"
     delay: "{{ Delay }}"
 speech:
-  type: plaintext
-  text: !include ../confirmations.yaml
+  text: !include ../misc/confirmations.yaml
+async_action: true

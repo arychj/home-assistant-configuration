@@ -1,3 +1,6 @@
+speech:
+  text: !include ../misc/confirmations.yaml
+async_action: true
 action:
   - service: light.turn_on
     data:
@@ -28,6 +31,3 @@ action:
   - service: light.turn_off
     data:
       entity_id: group.lights_upstairs
-speech:
-  type: plaintext
-  text: !include ../confirmations.yaml

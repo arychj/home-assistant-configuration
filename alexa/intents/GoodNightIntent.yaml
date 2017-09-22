@@ -1,5 +1,0 @@
-action:
-  service: script.good_night
-speech:
-  type: plaintext
-  text: !include ../confirmations_goodnight.yaml

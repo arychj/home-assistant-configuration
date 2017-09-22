@@ -1,1 +1,0 @@
-intents: !include_dir_named intents

@@ -1,3 +1,0 @@
-speech:
-  type: plaintext
-  text: !include ../confirmations.yaml

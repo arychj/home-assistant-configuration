@@ -8,5 +8,5 @@ action:
     data_template:
       entity_id: group.lights_entryway
 speech:
-  type: plaintext
-  text: !include ../confirmations.yaml
+  text: !include ../misc/confirmations.yaml
+async_action: true

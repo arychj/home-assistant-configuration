@@ -6,5 +6,5 @@ action:
 #    color_temp: 370
     rgb_color: [255,199,116]
 speech:
-  type: plaintext
-  text: !include ../confirmations.yaml
+  text: !include ../misc/confirmations.yaml
+async_action: true
