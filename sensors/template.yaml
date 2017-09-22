@@ -34,7 +34,7 @@
       value_template: >
         {%- if is_state("device_tracker.onyx", "home") or 
                is_state("device_tracker.arychj_mobile", "home") 
-         -%}
+        -%}
           home
         {%- else -%}
           not_home
@@ -43,7 +43,7 @@
       value_template: >
         {%- if is_state("device_tracker.sierra", "home") or 
                is_state("device_tracker.scullati_mobile", "home") 
-         -%}
+        -%}
           home
         {%- else -%}
           not_home
@@ -52,8 +52,24 @@
       value_template: >
         {%- if is_state("sensor.presence_erik", "home") or 
                is_state("sensor.presence_sierra", "home") 
-         -%}
+        -%}
           home
         {%- else -%}
           not_home
         {%- endif -%}
+    secret_bing_maps_api_key:
+      value_template: !secret bing_maps_api_key
+    secret_gps_local_latitude:
+      value_template: !secret gps_local_latitude
+    secret_gps_local_longitude:
+      value_template: !secret gps_local_longitude
+    traffic_update_timer:
+      value_template: >
+        {%- if now().strftime("%a") in ["Mon", "Tue", "Wed", "Thu", "Fri"] and 
+               now().strftime("%T") > "07:00" and
+               now().strftime("%T") < "09:00"
+        -%} 
+          {{ (now().timestamp() / 300) | round(0) }}
+        {%- else -%} 
+          {{ (now().timestamp() / 1800) | round(0) }}
+        {%- endif -%} 

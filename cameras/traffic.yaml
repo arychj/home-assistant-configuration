@@ -1,0 +1,16 @@
+- platform: generic
+  name: 'I-65 NB @ Old Hickory Boulevard'
+  still_image_url: http://icons.wunderground.com/webcamramdisk/t/n/tndot1/395/current.jpg
+  scan_interval: 300
+- platform: generic
+  name: 'I-65 NB @ Harding Place'
+  still_image_url: http://icons.wunderground.com/webcamramdisk/t/n/tndot1/364/current.jpg
+  scan_interval: 300
+- platform: generic
+  name: 'I-65 NB @ Wedgewood'
+  still_image_url: http://icons.wunderground.com/webcamramdisk/t/n/tndot1/357/current.jpg
+  scan_interval: 300
+- platform: generic
+  name: 'Traffic'
+  still_image_url: https://dev.virtualearth.net/REST/V1/Imagery/Map/Road/{{ states('sensor.secret_gps_local_latitude') }}%2C{{ states('sensor.secret_gps_local_longitude') }}/12?mapSize=600,600&mapLayer=TrafficFlow&format=jpeg&key={{ states('sensor.secret_bing_maps_api_key') }}&nonce={{ states('sensor.traffic_update_timer') }}
+  limit_refetch_to_url_change: true

@@ -48,7 +48,7 @@ logbook:
 # Track the sun
 sun:
 
-alexa: !include alexa/intents.yaml
+alexa:
 automation: !include_dir_merge_list automation
 binary_sensor: !include binary_sensor.yaml
 camera: !include_dir_merge_list cameras
@@ -57,6 +57,7 @@ emulated_hue: !include emulated_hue.yaml
 google: !include google.yaml
 group: !include_dir_named groups
 ifttt: !include ifttt.yaml
+intent_script: !include_dir_named intents
 input_boolean: !include input_boolean.yaml
 input_slider: !include input_slider.yaml
 light: !include light.yaml
@@ -71,5 +72,5 @@ shell_command: !include shell_command.yaml
 switch: !include switch.yaml
 tts: !include tts.yaml
 twilio: !include twilio.yaml
-usps: !include usps.yaml
+#usps: !include usps.yaml
 zwave: !include zwave.yaml
